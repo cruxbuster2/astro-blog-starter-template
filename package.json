@@ -13,14 +13,14 @@
 		"publish": true
 	},
 	"dependencies": {
-		"@astrojs/cloudflare": "12.6.0",
+		"@astrojs/cloudflare": "^12.6.10",
 		"@astrojs/mdx": "4.3.0",
 		"@astrojs/rss": "4.0.11",
 		"@astrojs/sitemap": "3.4.1",
-		"astro": "5.10.1",
 		"typescript": "5.8.3"
 	},
 	"devDependencies": {
+		"astro": "^5.14.6",
 		"wrangler": "4.21.x"
 	},
 	"scripts": {
