@@ -1,0 +1,222 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead 
+			title="Teaching - Benjamin Chapin" 
+			description="Teaching philosophy, experience, and approach to accounting education"
+		/>
+		<style>
+			main {
+				width: calc(100% - 2em);
+				max-width: 900px;
+				margin: 2em auto;
+				padding: 0 1em;
+				color: rgb(var(--gray-dark));
+			}
+			.teaching-section {
+				margin-bottom: 3em;
+			}
+			.teaching-section h2 {
+				border-bottom: 2px solid rgb(var(--accent));
+				padding-bottom: 0.3em;
+				margin-bottom: 1em;
+			}
+			.course-card {
+				margin-bottom: 2em;
+				padding: 1.5em;
+				background: rgb(var(--gray-light));
+				border-radius: 8px;
+			}
+			.course-card h3 {
+				margin-top: 0;
+				margin-bottom: 0.5em;
+				color: rgb(var(--black));
+			}
+			.course-details {
+				font-style: italic;
+				color: rgb(var(--gray));
+				margin-bottom: 1em;
+			}
+			.highlight-box {
+				padding: 1.5em;
+				background: rgb(var(--gray-light));
+				border-left: 4px solid rgb(var(--accent));
+				border-radius: 4px;
+				margin: 2em 0;
+			}
+			.student-quote {
+				font-style: italic;
+				padding: 1em 1.5em;
+				background: white;
+				border-left: 4px solid rgb(var(--accent));
+				margin: 1.5em 0;
+			}
+			.tools-list {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.5em;
+				margin-top: 1em;
+			}
+			.tool-tag {
+				padding: 0.3em 0.8em;
+				background: white;
+				border: 1px solid rgb(var(--accent));
+				border-radius: 4px;
+				font-size: 0.9em;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Teaching</h1>
+
+			<section class="teaching-section">
+				<h2>Teaching Motivation and Objectives</h2>
+				<p>
+					Classroom experiences have a lasting impact. I distinctly remember the excitement I felt in my 
+					undergraduate accounting information systems class because the instructor aligned the coursework 
+					with my career aspirations. That exciting feeling was a persistent influence on my 14 years as 
+					an industry accountant and inspired many of my best professional achievements.
+				</p>
+				<p>
+					As an instructor, I strive to create a memorable classroom experience with objectives informed 
+					by research on motivation and feedback:
+				</p>
+				<ol>
+					<li><strong>Foster domain-expertise</strong></li>
+					<li><strong>Promote autonomy and efficacy</strong></li>
+					<li><strong>Connect students meaningfully with the material</strong></li>
+				</ol>
+			</section>
+
+			<section class="teaching-section">
+				<h2>Teaching Experience</h2>
+				
+				<div class="course-card">
+					<h3>Data Analytics for Accountants</h3>
+					<p class="course-details">Virginia Commonwealth University | Two Sections</p>
+					<p>
+						Students use critical thinking with accounting information and analytical tools to make 
+						data-driven decisions in complex business environments. The course emphasizes practical 
+						application of modern analytics platforms.
+					</p>
+					<p><strong>Tools & Technologies:</strong></p>
+					<div class="tools-list">
+						<span class="tool-tag">Excel</span>
+						<span class="tool-tag">SQL</span>
+						<span class="tool-tag">Power BI</span>
+						<span class="tool-tag">Tableau</span>
+						<span class="tool-tag">Alteryx</span>
+						<span class="tool-tag">Knime</span>
+					</div>
+					<p style="margin-top: 1em;">
+						My experience as a controller and CFO provides relevant industry insights. I use that 
+						insight to give students opportunities to build confidence while applying knowledge, 
+						facilitating connections between stakeholder objectives and data analytic frameworks 
+						using accounting information.
+					</p>
+				</div>
+
+				<div class="course-card">
+					<h3>Business Plan Financials for Construction Industry</h3>
+					<p class="course-details">Virginia Tech, Myers-Lawson School of Construction | Guest Lecturer (2018)</p>
+					<p>
+						Led sessions on choosing business plan financials for securing investors in the construction 
+						industry, bridging classroom theory with practical industry applications.
+					</p>
+				</div>
+			</section>
+
+			<section class="teaching-section">
+				<h2>Teaching Philosophy</h2>
+				
+				<h3>Critical Thinking, Motivation, and Feedback</h3>
+				<p>
+					I foster an environment that encourages critical thinking for deeper understanding. I pose 
+					questions frequently to guide students toward class objectives while promoting ownership of 
+					the learning experience. Self-directed discussions help students develop connections with the 
+					material, consistent with literature on autonomy and self-efficacy for intrinsic motivation.
+				</p>
+				
+				<div class="student-quote">
+					"I immediately reassure [others] that they are in good hands [referring to instructor] ... 
+					especially the importance of learning how to critically think."
+					<br><em>— Former Student</em>
+				</div>
+
+				<p>
+					My research informs my feedback approach. I provide task-focused, self-referenced, and 
+					constructive feedback, identifying specific next steps for improvement.
+				</p>
+
+				<h3>Teaching and Learning Augmented through Technology</h3>
+				<p>
+					I leverage my AI research to inform instruction and pedagogy. I co-authored "Suggestions for 
+					the use of artificial intelligence tools in Ph.D. programs" and presented at the American 
+					Accounting Association's Conference on Teaching and Learning Excellence.
+				</p>
+				<p>
+					I view AI tools as extensions of traditional tools that meet practice demands while exciting 
+					and inspiring students. Technology is both a design choice and a consequence of my teaching 
+					approach.
+				</p>
+
+				<div class="student-quote">
+					"Professor Chapin is the first professor I've had who truly shows that he cares about our 
+					success in class and out of college. He would allow us to choose from different software 
+					depending on our career requirements and would learn each one to grade assignments."
+					<br><em>— Former Student</em>
+				</div>
+			</section>
+
+			<section class="teaching-section">
+				<h2>Teaching Interests</h2>
+				<p>
+					I am passionate about teaching courses that bridge theory and practice in accounting, 
+					particularly:
+				</p>
+				<ul>
+					<li><strong>Data Analytics in Accounting</strong> — Using modern tools to analyze accounting information</li>
+					<li><strong>Managerial Accounting</strong> — Decision-making frameworks and performance measurement</li>
+					<li><strong>Financial Accounting</strong> — Foundations and financial reporting</li>
+					<li><strong>Accounting Information Systems</strong> — Technology's role in accounting processes</li>
+					<li><strong>AI and Emerging Technologies</strong> — Preparing students for technology-enabled practice</li>
+				</ul>
+			</section>
+
+			<section class="teaching-section">
+				<h2>Teaching Approach in Practice</h2>
+				<div class="highlight-box">
+					<p>
+						My teaching experience has provided opportunities to apply my practical teaching goals of 
+						motivation, feedback, and the use of technology to meet those ends. I design courses that:
+					</p>
+					<ul>
+						<li>Give students autonomy in tool selection based on their career goals</li>
+						<li>Connect classroom learning to real industry scenarios from my 14 years in practice</li>
+						<li>Provide frequent, constructive feedback that promotes growth and self-efficacy</li>
+						<li>Incorporate cutting-edge technology while maintaining focus on fundamental concepts</li>
+						<li>Encourage critical thinking through guided discussion and problem-solving</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="teaching-section">
+				<h2>Professional Development</h2>
+				<ul>
+					<li>Co-author: "Suggestions for the use of artificial intelligence tools in Ph.D. programs"</li>
+					<li>Presenter: American Accounting Association's Conference on Teaching and Learning Excellence</li>
+					<li>Industry Experience: 14 years as Controller and CFO, informing practical pedagogy</li>
+				</ul>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

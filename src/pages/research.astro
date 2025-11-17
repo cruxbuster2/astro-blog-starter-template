@@ -1,0 +1,226 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead 
+			title="Research - Benjamin Chapin" 
+			description="Research on behavioral accounting, AI in accounting, and management control systems"
+		/>
+		<style>
+			main {
+				width: calc(100% - 2em);
+				max-width: 900px;
+				margin: 2em auto;
+				padding: 0 1em;
+				color: rgb(var(--gray-dark));
+			}
+			.research-section {
+				margin-bottom: 3em;
+			}
+			.research-section h2 {
+				border-bottom: 2px solid rgb(var(--accent));
+				padding-bottom: 0.3em;
+				margin-bottom: 1.5em;
+			}
+			.paper {
+				margin-bottom: 2em;
+				padding: 1.5em;
+				background: rgb(var(--gray-light));
+				border-radius: 8px;
+			}
+			.paper h3 {
+				margin-top: 0;
+				margin-bottom: 0.5em;
+				color: rgb(var(--black));
+			}
+			.paper .authors {
+				font-style: italic;
+				margin-bottom: 0.5em;
+				color: rgb(var(--gray));
+			}
+			.paper .status {
+				display: inline-block;
+				padding: 0.2em 0.6em;
+				background: rgb(var(--accent));
+				color: white;
+				border-radius: 4px;
+				font-size: 0.85em;
+				margin-bottom: 0.8em;
+			}
+			.paper .abstract {
+				margin-top: 1em;
+				line-height: 1.6;
+			}
+			.paper-links {
+				margin-top: 1em;
+			}
+			.paper-links a {
+				display: inline-block;
+				margin-right: 1em;
+				padding: 0.4em 0.8em;
+				background: white;
+				border: 1px solid rgb(var(--accent));
+				color: rgb(var(--accent));
+				text-decoration: none;
+				border-radius: 4px;
+				font-size: 0.9em;
+			}
+			.paper-links a:hover {
+				background: rgb(var(--accent));
+				color: white;
+			}
+			.interest-tags {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.5em;
+				margin-top: 1em;
+			}
+			.tag {
+				padding: 0.3em 0.8em;
+				background: rgb(var(--gray-light));
+				border-radius: 4px;
+				font-size: 0.9em;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Research</h1>
+			<p>
+				My research examines the intersection of human behavior, technology, and accounting systems. 
+				I use experimental methods to understand how AI, feedback mechanisms, and emotional dynamics 
+				influence decision-making in managerial and accounting contexts.
+			</p>
+
+			<section class="research-section">
+				<h2>Research Interests</h2>
+				<div class="interest-tags">
+					<span class="tag">Behavioral Accounting</span>
+					<span class="tag">AI in Accounting</span>
+					<span class="tag">Feedback Systems</span>
+					<span class="tag">Management Control Systems</span>
+					<span class="tag">Emotional Dynamics</span>
+					<span class="tag">Human-Machine Interaction</span>
+					<span class="tag">Experimental Methods</span>
+					<span class="tag">Managerial Decision-Making</span>
+				</div>
+			</section>
+
+			<section class="research-section">
+				<h2>Working Papers</h2>
+
+				<div class="paper">
+					<h3>[Paper Title: AI Feedback and Managerial Creativity]</h3>
+					<p class="authors">Benjamin Chapin [and co-authors if applicable]</p>
+					<span class="status">Under Review / Working Paper</span>
+					
+					<p class="abstract">
+						<strong>Abstract:</strong> This paper investigates how the source and tone of feedback 
+						affect creativity and effort in accounting and managerial tasks. Using an experimental 
+						design, I compare feedback from human supervisors versus AI systems to understand how 
+						feedback source influences emotional responses and decision quality. Preliminary findings 
+						suggest that [add your key findings here].
+					</p>
+					
+					<p><strong>Keywords:</strong> AI feedback, creativity, managerial accounting, experimental design</p>
+					
+					<!-- <div class="paper-links">
+						<a href="#">Download PDF</a>
+						<a href="#">SSRN</a>
+						<a href="#">Slides</a>
+					</div> -->
+				</div>
+
+				<div class="paper">
+					<h3>[Paper Title: Emotional Responses in Control Systems]</h3>
+					<p class="authors">Benjamin Chapin [and co-authors]</p>
+					<span class="status">In Progress</span>
+					
+					<p class="abstract">
+						<strong>Abstract:</strong> This study examines how emotional dynamics influence the 
+						effectiveness of management control systems. Drawing on psychology and behavioral 
+						accounting literature, I explore whether emotional intelligence and emotional regulation 
+						moderate the relationship between control system design and performance outcomes. 
+						[Add more details about your methodology and expected contributions].
+					</p>
+					
+					<p><strong>Keywords:</strong> emotions, management control systems, behavioral accounting</p>
+				</div>
+
+				<!-- Add more papers as needed -->
+				<div class="paper" style="border: 2px dashed rgb(var(--gray));">
+					<h3>[Your Next Paper Title]</h3>
+					<p class="authors">Benjamin Chapin</p>
+					<span class="status">In Development</span>
+					
+					<p class="abstract">
+						<strong>Abstract:</strong> [Describe your project here]
+					</p>
+				</div>
+			</section>
+
+			<section class="research-section">
+				<h2>Publications</h2>
+				<p><em>Publications will appear here as they become available.</em></p>
+				
+				<!-- Example format for when you have publications:
+				<div class="paper">
+					<h3>Paper Title</h3>
+					<p class="authors">Authors</p>
+					<p><em>Journal Name</em>, Volume(Issue), Year, Pages.</p>
+					<p class="abstract">
+						<strong>Abstract:</strong> Brief summary...
+					</p>
+					<div class="paper-links">
+						<a href="#">Publisher</a>
+						<a href="#">PDF</a>
+					</div>
+				</div>
+				-->
+			</section>
+
+			<section class="research-section">
+				<h2>Conference Presentations</h2>
+				<ul>
+					<li>[Presentation title]. [Conference name], [Location], [Date].</li>
+					<li><em>Future presentations will be listed here.</em></li>
+				</ul>
+			</section>
+
+			<section class="research-section">
+				<h2>Research Philosophy</h2>
+				<p>
+					I believe the most impactful accounting research bridges theory and practice. My work 
+					aims to address real-world challenges that practitioners face while contributing to 
+					theoretical understanding of human behavior in organizational contexts. By combining 
+					rigorous experimental methods with insights from psychology and technology, I strive 
+					to make accounting systems more effective, human-centered, and responsive to the 
+					evolving business landscape.
+				</p>
+				<p>
+					As AI and algorithmic systems become increasingly prevalent in accounting and 
+					management, understanding how humans interact with these technologies is crucial. 
+					My research provides evidence-based insights to help organizations implement 
+					technology in ways that enhance rather than diminish human judgment and well-being.
+				</p>
+			</section>
+
+			<section class="research-section">
+				<h2>Collaborations & Contact</h2>
+				<p>
+					I'm always interested in discussing potential research collaborations, especially 
+					projects that explore behavioral aspects of accounting, AI in professional services, 
+					or innovative experimental designs. If you'd like to discuss research opportunities 
+					or have questions about my work, please feel free to reach out.
+				</p>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

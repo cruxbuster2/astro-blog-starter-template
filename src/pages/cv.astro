@@ -1,0 +1,215 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead 
+			title="Curriculum Vitae - Benjamin Chapin" 
+			description="Academic CV for Benjamin Chapin, PhD candidate in Accounting at Virginia Commonwealth University"
+		/>
+		<style>
+			main {
+				width: calc(100% - 2em);
+				max-width: 900px;
+				margin: 2em auto;
+				padding: 0 1em;
+				color: rgb(var(--gray-dark));
+			}
+			.cv-section {
+				margin-bottom: 2.5em;
+			}
+			.cv-section h2 {
+				border-bottom: 2px solid rgb(var(--accent));
+				padding-bottom: 0.3em;
+				margin-bottom: 1em;
+			}
+			.cv-entry {
+				margin-bottom: 1.5em;
+			}
+			.cv-entry h3 {
+				margin-bottom: 0.3em;
+				font-size: 1.1em;
+			}
+			.cv-entry .position {
+				font-style: italic;
+				color: rgb(var(--gray));
+				margin-bottom: 0.5em;
+			}
+			.cv-entry .date {
+				color: rgb(var(--gray));
+				font-size: 0.9em;
+			}
+			.cv-entry ul {
+				margin-top: 0.5em;
+			}
+			.skills-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+				gap: 1em;
+			}
+			.download-link {
+				display: inline-block;
+				padding: 0.5em 1em;
+				background: rgb(var(--accent));
+				color: white;
+				text-decoration: none;
+				border-radius: 4px;
+				margin-bottom: 2em;
+			}
+			.download-link:hover {
+				opacity: 0.9;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Curriculum Vitae</h1>
+			<p><strong>Benjamin Chapin</strong><br />
+			PhD Candidate, Accounting<br />
+			Virginia Commonwealth University</p>
+			
+			<!-- Uncomment when you have a PDF version ready -->
+			<!-- <a href="/cv/chapin-cv.pdf" class="download-link">Download PDF Version</a> -->
+
+			<section class="cv-section">
+				<h2>Education</h2>
+				
+				<div class="cv-entry">
+					<h3>Doctor of Philosophy in Accounting</h3>
+					<p class="position">Virginia Commonwealth University, Richmond, VA</p>
+					<p class="date">Expected [Year]</p>
+					<ul>
+						<li>Dissertation: [Your dissertation title or area]</li>
+						<li>Advisor: [Advisor name]</li>
+						<li>Focus: Behavioral accounting, AI in accounting, management control systems</li>
+					</ul>
+				</div>
+
+				<div class="cv-entry">
+					<h3>[Previous Degree]</h3>
+					<p class="position">[Institution]</p>
+					<p class="date">[Year]</p>
+				</div>
+			</section>
+
+			<section class="cv-section">
+				<h2>Research Interests</h2>
+				<ul>
+					<li>Behavioral accounting and experimental methods</li>
+					<li>Artificial intelligence and algorithmic decision-making in accounting</li>
+					<li>Feedback systems and their impact on managerial behavior</li>
+					<li>Emotional dynamics in accounting and control environments</li>
+					<li>Human-machine interaction in professional judgment</li>
+				</ul>
+			</section>
+
+			<section class="cv-section">
+				<h2>Working Papers</h2>
+				<p><em>See the <a href="/research">Research page</a> for detailed summaries and current projects.</em></p>
+			</section>
+
+			<section class="cv-section">
+				<h2>Teaching Experience</h2>
+				
+				<div class="cv-entry">
+					<h3>[Course Title]</h3>
+					<p class="position">Virginia Commonwealth University</p>
+					<p class="date">[Semester/Year]</p>
+					<ul>
+						<li>Role: [Instructor/TA/etc.]</li>
+						<li>Topics covered: [Brief description]</li>
+					</ul>
+				</div>
+
+				<div class="cv-entry">
+					<h3>Teaching Interests</h3>
+					<ul>
+						<li>Managerial Accounting</li>
+						<li>Financial Accounting</li>
+						<li>Data Analytics in Accounting</li>
+						<li>Emerging Technology in Accounting Education</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="cv-section">
+				<h2>Professional Experience</h2>
+				
+				<div class="cv-entry">
+					<h3>[Previous Position]</h3>
+					<p class="position">[Organization]</p>
+					<p class="date">[Dates]</p>
+					<ul>
+						<li>Experience in accounting practice and small-business performance measurement</li>
+						<li>[Add specific responsibilities or achievements]</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="cv-section">
+				<h2>Conference Presentations</h2>
+				
+				<div class="cv-entry">
+					<p>[Presentation Title]. [Conference Name], [Location], [Month Year].</p>
+				</div>
+			</section>
+
+			<section class="cv-section">
+				<h2>Awards & Honors</h2>
+				<ul>
+					<li>[Award name, organization, year]</li>
+				</ul>
+			</section>
+
+			<section class="cv-section">
+				<h2>Skills & Competencies</h2>
+				<div class="skills-grid">
+					<div>
+						<h3>Research Methods</h3>
+						<ul>
+							<li>Experimental design</li>
+							<li>Behavioral research</li>
+							<li>Statistical analysis</li>
+							<li>Survey methodology</li>
+						</ul>
+					</div>
+					<div>
+						<h3>Technical Skills</h3>
+						<ul>
+							<li>[Statistical software: R, STATA, etc.]</li>
+							<li>[Data analysis tools]</li>
+							<li>[Programming languages]</li>
+							<li>AI/ML applications</li>
+						</ul>
+					</div>
+					<div>
+						<h3>Professional</h3>
+						<ul>
+							<li>Accounting practice</li>
+							<li>Performance measurement</li>
+							<li>Management consulting</li>
+							<li>Business analytics</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="cv-section">
+				<h2>Professional Affiliations</h2>
+				<ul>
+					<li>[Professional organization memberships]</li>
+					<li>American Accounting Association (AAA)</li>
+					<li>[Section memberships within AAA]</li>
+				</ul>
+			</section>
+
+			<p><em>Last updated: November 2025</em></p>
+		</main>
+		<Footer />
+	</body>
+</html>
